@@ -3,6 +3,7 @@
 #include <time.h>
 
 int main(){
+  //variaveis
   int easy = 1000;
   int medium = 10000;
   int hard = 1000000;
@@ -15,6 +16,7 @@ int main(){
   
   printf("What's the number??\n\n");
   
+  //menu
   do{
     printf("Menu\n\n");
     printf("Press 1 to easy\nPress 2 to medium\nPress 3 to hard\n\n");
@@ -22,6 +24,7 @@ int main(){
   
     }while(option != 1 && option != 2 && option != 3);
 
+    //facil
     if (option == 1){
         
         random_number = rand() % 1001;
@@ -38,7 +41,7 @@ int main(){
         }
         printf("congratulations, you got it right in %d tries", count);
         
-        
+    //medio
     }else if (option == 2){
         random_number = rand() % 10001;
         printf("\n\nChoose a number between 0 and 10000\n\n");
@@ -53,7 +56,8 @@ int main(){
             count++;    
         }
         printf("congratulations, you got it right in %d tries", count);
-        
+    
+      //dificil
     }else if (option == 3){
         random_number = rand() % 1000001;
         printf("\n\nChoose a number between 0 and 1000000\n\n");
